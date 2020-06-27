@@ -7,9 +7,19 @@
     <link rel="stylesheet" href="./contact-style.css">
 </head>
 <body>
+    <header> 
+        <nav>
+            <ul class="nav__links">
+                <li><a href="https://nikerane.github.io/"> Home</a></li>
+                <li><a href="https://nikerane.github.io/project.html"> Projects</a></li>
+                <li><a href="https://nikerane.github.io/extracurricular.html"> Extracurricular</a></li>
+                <li><a href="https://loving-wozniak-2f3c97.netlify.app/"> Contact</a></li>
+            </ul>
+        </nav>
+    </header>
     <form method="POST" data-netlify="true">
         <div class="contact">
-            <h1>contact</h1>
+            <h1>contact me</h1>
             <div class="txt">
                 <label>
                     Full name: 
@@ -28,15 +38,16 @@
                 <label>
                     Message: 
                 </label>
-                <textarea name="message" id="message" placeholder="Message" rows="5"></textarea>
+                <textarea name="message" id="message" placeholder="Enter your message" rows="5"></textarea>
             </div>
             <div class="txt">
                 <div data-netlify-recaptcha="true"></div>
             </div>
 
-            <ul class="actions">
-                <li><input type="submit" value="Send Message" class="button primary" /></li>
-            </ul>
+            <div>
+                <button class="actions" type="submit" value="Send Message" >Send Message</button>
+            </div>
+            
 
         </div>
     </form>

@@ -1,35 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+
 body{
     margin: 0;
-     padding: 0;
-     background-color: black;
-     background-size: cover;
+    padding: 0;
+    background: url(https://images.unsplash.com/photo-1478760329108-5c3ed9d495a0?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjF9);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    
+    
 }
 
 .contact{
     width: 80%;
     max-width: 600px;
-    background: blanchedalmond;
+    background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    padding: 30px 40px;
+    padding: 30px 30px;
     box-sizing: border-box;
     border-radius: 10px;
     text-align: center;
-    box-shadow: 0 0 20px blanchedalmond;
+    box-shadow: 0 0 8px blanchedalmond;
     
 }
 .contact h1 {
     margin-top: 0;
-    font-weight: 300;
-     
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
 }
 
 .txt {
     border: 2px solid gray;
     margin: 8px 0;
-    padding: 10px 15px;
+    padding: 5px 10px;
     border-radius: 3px;
 }
 
@@ -45,17 +54,57 @@ body{
     width: 100%;
     border: none;
     background: none;
-    font-size: 20px;
+    font-size: 15px;
     margin-top: 5px;
 } 
 
-.actions li {
+.actions {
     display: inline-block;
     list-style: none;
-    background: black;
-    padding: 0;
-    color: white;
+    background-image: linear-gradient(to top, #09203f 0%, #537895 100%);
+    padding: 10px;
     text-transform: uppercase;
     cursor: pointer;
     margin-top: 10px;
+    font-size: 10px;
+    border-radius: 8px;
 }
+
+
+li, a, button{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    color: #edf0f1;
+     text-decoration: none;
+  }
+  
+  header{
+    display: flex;
+    justify-content:flex-end;
+     align-items: center;
+     padding: 10px 3%;
+  }
+  
+  .logo{
+    cursor: pointer;
+    margin-right: auto;
+  }
+  
+  .nav__links{
+    list-style: none;
+  }
+  
+  .nav__links li{
+    display: inline-block;
+    padding: 0 30px;
+  }
+  
+  .nav__links li a {
+    transition: all 0.3s ease 0; 
+  }
+  
+  .nav__links li a:hover {
+    color: rgba(42, 43, 44, 0.521); 
+    transition: 1s;
+  }
