@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./contact-style.css">
+</head>
+<body>
+    <form method="POST" data-netlify="true">
+        <div class="contact">
+            <h1>contact</h1>
+            <div class="txt">
+                <label>
+                    Full name: 
+                </label>
+                <input type="text" name="name" id="name" placeholder="Enter your name">
+            </div>
+            
+            <div class="txt">
+                <label>
+                    Email: 
+                </label>
+                <input type="email" name="email" id="email" placeholder="Enter your email">
+            </div>
+
+            <div class="txt">
+                <label>
+                    Message: 
+                </label>
+                <textarea name="message" id="message" placeholder="Message" rows="5"></textarea>
+            </div>
+            <div class="txt">
+                <div data-netlify-recaptcha="true"></div>
+            </div>
+
+            <ul class="actions">
+                <li><input type="submit" value="Send Message" class="button primary" /></li>
+            </ul>
+
+        </div>
+    </form>
+    
+</body>
+</html>
