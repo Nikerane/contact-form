@@ -108,3 +108,13 @@ li, a, button{
     color: rgba(42, 43, 44, 0.521); 
     transition: 1s;
   }
+
+  @media only screen and (max-width: 500px){
+    .nav__links{
+      width: 100%;
+    }
+
+    .txt{
+      overflow-x: scroll;
+    }
+  }
